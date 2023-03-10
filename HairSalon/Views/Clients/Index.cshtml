@@ -6,7 +6,7 @@
 @model List<HairSalon.Models.Client>;
 
 <h1>Clients</h1>
-
+<hr />
 @if (@Model.Count == 0)
 {
   <h3>No clients have been added yet!</h3>
@@ -20,7 +20,9 @@ else
     }
   </ul>
 }
-
+<hr />
 <p>@Html.ActionLink("Add new client", "Create")</p>
+<hr />
 <p>@Html.ActionLink("Back to stylists", "Index", "Stylists")</p>
+<hr />
 <p>@Html.ActionLink("Back Home", "Index", "Home")</p>

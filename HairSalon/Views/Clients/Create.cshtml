@@ -4,10 +4,10 @@
 @model HairSalon.Models.Client
 
 <h4>Add a new client</h4>
-
+<hr />
 <p><strong>NOTE:</strong> You need to have at least one Stylist before you can add an client!</p>
 <p>Go to @Html.ActionLink("this page", "Create", "Stylists") to create a Stylist.</p>
-
+<hr />
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.ClientName)
@@ -18,4 +18,5 @@
 
   <input type="submit" value="Add new client" class="btn btn-primary" />
 }
+<hr />
 <p>@Html.ActionLink("Show all clients", "Index")</p>

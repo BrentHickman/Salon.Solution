@@ -28,8 +28,8 @@
       "DefaultConnection": "Server=localhost;Port=3306;database=brent_hickman;uid=[YOURUSERNAME];pwd=[YOURPASSWORD];"
   }
 }
-* Next,launch MySQLWorkbench, navigate to the 'Administration' tab on the left and click 'Data Import/Restore'.
-* On the 'Import Options' panel, select 'Import from Self-Contained File' and navigate to "brent_hickman.sql" located in the HairSalon directory.
+* Next, launch MySQLWorkbench, navigate to the 'Administration' tab on the left and click 'Data Import/Restore'.
+* On the 'Import Options' panel, select 'Import from Self-Contained File' and navigate to "brent_hickman.sql" located in the HairSalon directory and select 'Open'.
 * Then, on the 'Default Target Schema' panel select 'new' and name the import 'brent_hickman' and click 'ok'.
 * Click the 'Start Import' button in the bottom right of the window and confirm the import is successful.
 * To launch the application in development mode, enter the following lines into the command line:
