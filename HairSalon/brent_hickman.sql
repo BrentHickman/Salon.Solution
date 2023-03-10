@@ -28,18 +28,9 @@ CREATE TABLE `Clients` (
   `StylistId` int NOT NULL,
   PRIMARY KEY (`ClientId`),
   KEY `StylistId_idx` (`StylistId`),
-  CONSTRAINT `StylistId` FOREIGN KEY (`StylistId`) REFERENCES `Stylists` (`StylistId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `StylistId` FOREIGN KEY (`StylistId`) REFERENCES `Stylists` (`StylistId`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Clients`
---
-
-LOCK TABLES `Clients` WRITE;
-/*!40000 ALTER TABLE `Clients` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Clients` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `Stylists`
@@ -52,17 +43,8 @@ CREATE TABLE `Stylists` (
   `StylistId` int NOT NULL AUTO_INCREMENT,
   `StylistName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Stylists`
---
-
-LOCK TABLES `Stylists` WRITE;
-/*!40000 ALTER TABLE `Stylists` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Stylists` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -73,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-10  9:30:01
+-- Dump completed on 2023-03-10 14:39:46
