@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(227, 179, 88);
+  min-width: 55%;
+  max-width: 850px;
+  margin: 5% 10% 10% 20%;
+  align-content: center;
+}
+
+div, h1, h2, h3, h4{
+  max-width: 850px;
+  padding: 2% 5% 2% 5%;
+  margin: 10px;
+  background-color: beige;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  align-content: center;
+}
+
+form , input{
+  align-content: center;
+  text-decoration: none;
+  color: rgb(6, 79, 101);
+  font-size: large;
+  font-style: italic;
+  margin: 2px;
+  padding: 2px;
+}
+
+input{
+  align-items: right;
+}
+p, h1, h3 {
+  width: 90%;
+  padding: 2% 2% 2% 2%;
+  margin: 5% 5% 5% 5%;
+  align-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(6, 79, 101);
+  font-size: large;
+  font-style: italic;
+  margin: 2px;
+  padding: 2px;
+  outline: 2px;
+  outline-color: black;
+}
