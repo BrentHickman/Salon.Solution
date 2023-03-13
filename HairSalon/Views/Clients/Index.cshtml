@@ -21,8 +21,8 @@ else
   </ul>
 }
 <hr />
-<p>@Html.ActionLink("Add new client", "Create")</p>
-<hr />
-<p>@Html.ActionLink("Back to stylists", "Index", "Stylists")</p>
-<hr />
-<p>@Html.ActionLink("Back Home", "Index", "Home")</p>
+<div id="nav">
+<a>@Html.ActionLink("Add new client", "Create")</a>|
+<a>@Html.ActionLink("Back to stylists", "Index", "Stylists")</a>|
+<a>@Html.ActionLink("Back Home", "Index", "Home")</a>
+</div>

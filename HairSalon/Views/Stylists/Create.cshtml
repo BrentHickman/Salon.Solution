@@ -6,6 +6,7 @@
 
 <h4>Add a new Stylist</h4>
 <hr />
+<div id="nav">
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.StylistName, "Stylist Name: ")
@@ -13,4 +14,5 @@
   <input type="submit" value="Add new Stylist" />
 }
 <hr />
-<p>@Html.ActionLink("Show all Stylists", "Index")</p>
+<a>@Html.ActionLink("Show all Stylists", "Index")</a>
+</div>
